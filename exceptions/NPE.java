@@ -3,27 +3,17 @@ package exceptions;
 
 public class NPE {
 
-    Integer newInt = null;
+    static Integer newInt = null;
     public static void main(String[] args) {
-        NPE npe = new NPE();
-        var a = npe.newInt;
-        print(a);
-        // System.out.println(a);
-        
-        // .toString();
+        NPE npe = null;
+        Integer a = npe.newInt;
+        npe.print(a);
 
-        // Object a = null;
-        // Object b = "b";
-        // b=a;
-        // Object c = "c";
-        // System.out.println(a);
-        // b.toString();
     }
 
     static void print(Integer a){
         System.out.println(a);
-        // a.toString(); 
+        a.toString(); 
     }
-    
-    
+
 }
