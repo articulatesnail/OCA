@@ -4,13 +4,13 @@ public class var_init {
     int instance_int;
     static int static_int = 12;
     double amount = 3.0;
-    final short s = 3;
+    final short s = 3L;
 
     final byte a = 3, aa = 3;
     byte b = a + aa; // can't narrow from int to byte, if not CT constants
     byte bb = 3 + 3; // why is this okay?
     // because implicit narrowing can happen only with compile time constants
-   
+
     char c = 1;
     long l = 1;
     float f = 1;
@@ -21,22 +21,22 @@ public class var_init {
     int __ede__;
     int $3434;
 
-    String str = new String(new char[]{'2','2'});
-	
-	Short sh = new Short((short)1);
-	Short sh1 = 1;
-	Integer Int = 1;
-	Integer Int1 = new Integer(1);
-	
-	final int fin_int;
-	
-	{
-		fin_int =1;
-	}
-	
-	//public var_init(){ //constructor
-	//	fin_int = 1;
-	//}
+    String str = new String(new char[] { '2', '2' });
+
+    Short sh = new Short((short) 1);
+    Short sh1 = 1;
+    Integer Int = 1;
+    Integer Int1 = new Integer(1);
+
+    final int fin_int;
+
+    {
+        fin_int = 1;
+    }
+
+    // public var_init(){ //constructor
+    // fin_int = 1;
+    // }
 
     final public static void main(final String[] args) {
         // new var_init().instanceMethod();
