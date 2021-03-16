@@ -10,7 +10,7 @@ public class narrowing_widening {
     final void narrowing_primatives() {
         byte b = 0;
         short s = 0;
-        char c = 0.0;
+        char c = 0;
         int i = 0;
         long l = 20l;
         float f = 0F;
@@ -40,10 +40,10 @@ public class narrowing_widening {
 
     // but non-compile time is diff! bc "could change", 
     //kvm can't guarantee, the short ref can fit into
-        short s2 = 32000L;   // 1
+        short s2 = 32000;   // 1
         char c2 = (char)s2;     // 2
         s2 = 'w' ;
-        // char c3 = 65535;
+        // char c3 = 65536;
         s2 = (short)c2;
     }
     

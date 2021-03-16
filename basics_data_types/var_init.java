@@ -4,7 +4,7 @@ public class var_init {
     int instance_int;
     static int static_int = 12;
     double amount = 3.0;
-    final short s = 3L;
+    final short s = 3;
 
     final byte a = 3, aa = 3;
     byte b = a + aa; // can't narrow from int to byte, if not CT constants
