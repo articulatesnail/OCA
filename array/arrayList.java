@@ -29,5 +29,12 @@ public class arrayList {
 		
 		AL.forEach(n -> System.out.println(n));
 	}
+	
+	static void multiD(){
+		int[][] two;
+		int[]	one;
 
+		// two = one;
+		//array dimensions must match
+	}
 }
