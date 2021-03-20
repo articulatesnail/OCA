@@ -18,6 +18,11 @@ public class array {
 		int [] i = {1,2,3};
 		int ii [] = new int [] {12};
 		int iii [] = {12};
+		
+		long ll[][] = new long[2][2];
+		long l[] = {1l};
+		// ll=l; 
+		//nope, doesnt work.
 	}
 	
 	static void sort(){
@@ -29,6 +34,9 @@ public class array {
 		//}
 		
 	}
+
+	
+
 	
 	
 }

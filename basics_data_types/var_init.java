@@ -11,13 +11,14 @@ public class var_init {
     byte bb = 3 + 3; // why is this okay?
     // because implicit narrowing can happen only with compile time constants
 
-    char c = 1;
-    long l = 1;
+    char C = 1;
+    long L = 1; 
+
     float f = 1;
     double d = 1;
 
     int a123;
-    int _dsas;
+    int _das;
     int __ede__;
     int $3434;
 
@@ -43,7 +44,9 @@ public class var_init {
         var_init instance = new var_init();
         // System.out.println("print instance var: " + instance.instance_int);
         instance.thisRefStatic();
-        representation();
+        // representation();
+        wrapperNan();
+
     }
 
     static void hiddenFinalInSameClass() {
@@ -64,6 +67,10 @@ public class var_init {
         System.out.println("static_instance_int from instance method: " + static_int);
         System.out.println("static method from instance method: ");
         myStaticMethod();
+        char C = 1;
+        long L = 1; 
+        
+        L=C;
 
     }
 
@@ -87,6 +94,12 @@ public class var_init {
         float y = 0b10_000; // can't represent binary with a float
         int oct = 01234; // octal
         System.out.println("oct: " + oct);
+
+    }
+
+    static void wrapperNan() {
+        float f = Float.NaN;
+        System.out.println("f: " + f);
 
     }
 

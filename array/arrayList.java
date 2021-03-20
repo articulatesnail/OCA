@@ -6,7 +6,8 @@ import java.util.*;
 public class arrayList {
 	public static void main(String[] args) {
 		// add();
-		remove();
+		// remove();
+		nulls();
 	}
 
 	static void add() {
@@ -24,17 +25,30 @@ public class arrayList {
 		AL.add("2.1");
 		AL.add("3.1");
 		AL.add(Boolean.TRUE);
-		//System.out.println(AL.remove("3.1")); // true
-		//System.out.println(AL.remove(1)); // 2.1
-		
+		// System.out.println(AL.remove("3.1")); // true
+		// System.out.println(AL.remove(1)); // 2.1
+
 		AL.forEach(n -> System.out.println(n));
 	}
-	
-	static void multiD(){
+
+	static void multiD() {
 		int[][] two;
-		int[]	one;
+		int[] one;
 
 		// two = one;
-		//array dimensions must match
+		// array dimensions must match
+	}
+
+	static void nulls() {
+		List L = new ArrayList<String>();
+		String s = null;
+		L.add("a");
+		L.add("c");
+		L.add("c");
+		L.add(null);
+		System.out.println("answ: " + L.remove(s));
+
+		List LL = new List<String>();
+		// illegal
 	}
 }
